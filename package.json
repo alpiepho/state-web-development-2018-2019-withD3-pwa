@@ -1,9 +1,9 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "state-of-js-css",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "description": "D3 forced directed diagram based on State of Javascript 2018 and State of CSS 2019 - Ported to React/Gatsby/PWA.",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Al Piepho <alpiepho@donotsendemail.com>",
   "dependencies": {
     "d3": "^5.9.7",
     "d3-svg-legend": "^2.25.6",
@@ -15,6 +15,7 @@
     "gatsby-plugin-sharp": "^2.2.8",
     "gatsby-source-filesystem": "^2.1.5",
     "gatsby-transformer-sharp": "^2.2.4",
+    "gh-pages": "^2.0.1",
     "prop-types": "^15.7.2",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
@@ -30,6 +31,7 @@
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
+    "deploy": "gatsby build --prefix-paths && gh-pages -d public",
     "format": "prettier --write src/**/*.{js,jsx}",
     "start": "npm run develop",
     "serve": "gatsby serve",
@@ -37,9 +39,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+    "url": "https://alpiepho.github.io/state-of-web-development-2018-2019-withD3-pwa"
   },
   "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+    "url": "https://github.com/alpiepho/state-of-web-development-2018-2019-withD3-pwa/issues"
   }
 }
