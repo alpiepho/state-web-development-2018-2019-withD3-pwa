@@ -12,3 +12,18 @@ This is deployed on gh-pages [here](https://alpiepho.github.io/state-web-develop
 
 Added save/restore of locations to local storage, so they are preserved for a local user.  To clear this, either use the Chrome Dev tools ('Application' section) or change
 the number of bubbles by displaying in smaller screen size.
+
+
+## Lighthouse Audit for PWA
+
+Using React and particularly Gatsby makes it easy to score well with the Google Lighthouse Audit. Below is a test for this PWA:
+
+<img src="./doc/screenshot-lighthouse.png" width="400">
+
+## Remaining Work
+
+After finishing the port to a PWA, there are few things to finish:
+
+- fix image paths in the data.js (hard coded with github project path for now)
+- use GraphGL method to get data.js details
+- fix some of the small form factor widths etc.
