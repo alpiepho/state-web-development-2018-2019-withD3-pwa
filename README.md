@@ -4,7 +4,9 @@ This is a D3 force graph diagram based on the data from the [State of Javascript
 
 The D3 design is based on a project from Nau Technologies that can be found [here](https://naustud.io/tech-stack/) and [GitHub](https://github.com/trongthanh/techstack).  
 
-This static site adds some changes to how the data is declared, Google Analytics tracking, and the use of LocalStorage to save the state after dragging the bubble around.
+This PWA site adds some changes to how the data is declared, Google Analytics tracking, and the use of LocalStorage to save the state after dragging the bubble around.
+
+This is deployed on gh-pages [here](https://alpiepho.github.io/state-web-development-2018-2019-withD3-pwa/)
 
 ## Controlling Local Storage
 
