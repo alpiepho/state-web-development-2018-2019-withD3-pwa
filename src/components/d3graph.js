@@ -147,7 +147,7 @@ class D3Graph extends React.Component {
         }
       })
     let lsNodes = getFromLS("nodes")
-    if (lsNodes && nodes.length == lsNodes.length) nodes = lsNodes
+    if (lsNodes && nodes.length === lsNodes.length) nodes = lsNodes
     simulation.nodes(nodes).on("tick", ticked)
 
     svg.style("background-color", "#eee")
@@ -235,7 +235,8 @@ class D3Graph extends React.Component {
       .scale(scaleColor)
       .shape("circle")
 
-    let legend = svg
+    // let legend = svg
+    svg
       .append("g")
       .classed("legend-color", true)
       .attr("text-anchor", "start")
@@ -255,7 +256,8 @@ class D3Graph extends React.Component {
       .shapePadding(10)
       .labelAlign("end")
 
-    let legend2 = svg
+    // let legend2 = svg
+    svg
       .append("g")
       .classed("legend-size", true)
       .attr("text-anchor", "start")
