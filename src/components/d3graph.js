@@ -79,6 +79,17 @@ class D3Graph extends React.Component {
     let strength = 0.05
     let focusedNode
 
+    // change center
+    if (
+      "matchMedia" in window &&
+      window.matchMedia("(max-device-width: 767px)").matches
+    ) {
+      window.document.getElementById('svg-element').setAttribute("height", 700);
+      height = +svg.attr("height")
+      centerX = width * 0.5
+      centerY = height * 0.5
+    }
+    
     let format = d3.format(",d")
 
     // NOTE: to change, look at https://bl.ocks.org/pstuffa/3393ff2711a53975040077b7453781a9
@@ -442,6 +453,7 @@ class D3Graph extends React.Component {
             </a>
           </p>
           <svg
+            id="svg-element"
             width="100%"
             height="1000"
             fontFamily="sans-serif"
