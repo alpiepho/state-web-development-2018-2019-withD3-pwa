@@ -27,3 +27,8 @@ After finishing the port to a PWA, there are few things to finish:
 - fix image paths in the data.js (hard coded with github project path for now)
 - use GraphGL method to get data.js details
 - fix some of the small form factor widths etc.
+
+## Updates for GitHub security issues
+
+- added eslint-utils directly to package.json (is a deep dependency)
+
